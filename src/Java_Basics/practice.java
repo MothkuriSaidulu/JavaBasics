@@ -9,7 +9,8 @@ public class practice {
 //		reverseTheNumber();
 //		fibanociseNumber();
 //		countDigitesInNumber();
-		printRepeatedWord();
+//		printRepeatedWord();
+		reverseTheWords();
 
 	}
 
@@ -71,7 +72,20 @@ public class practice {
 		System.out.print(revserStr);
 	}
 
-	public void reverseTheWords() {
+	public static void reverseTheWords() {
+
+		String str = "I Am Writing Java Program";
+		String splittedStr[] = str.split(" ");
+		String reverseWord = " ";
+
+		for (String w : splittedStr) {
+
+			StringBuilder sb = new StringBuilder(w);
+			StringBuilder str2  = sb.reverse();
+			str2.append(str);
+			reverseWord+=str2.toString()+" ";
+		}
+		System.out.print(reverseWord.trim());
 
 	}
 
@@ -122,5 +136,6 @@ public class practice {
 		System.err.println(" Repeated time id  " + count);
 
 	}
+	
 
 }
