@@ -15,6 +15,7 @@ public class Test_01_Start_pattern {
 			{
 				System.out.print("*"); // it will print
 			}
+			
 			System.out.println(); // it will move to next line
 		}
 

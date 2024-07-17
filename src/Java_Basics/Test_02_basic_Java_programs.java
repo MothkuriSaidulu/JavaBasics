@@ -14,7 +14,6 @@ public class Test_02_basic_Java_programs {
 			System.out.print(" " + n3);
 			n1 = n2;
 			n2 = n3;
-
 		}
 
 		int[] num = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, };

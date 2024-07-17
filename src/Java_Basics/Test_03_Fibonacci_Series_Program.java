@@ -3,13 +3,9 @@ package Java_Basics;
 public class Test_03_Fibonacci_Series_Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-// Exaxmple: 0 1 1 2 3 5 8 13 ect.....
+// Example: 0 1 1 2 3 5 8 13 etc.....
 
-		
-		
-		
 		int n1 = 0, n2 = 1, n3, Count = 10;
 
 		System.out.print(n1 + " " + n2);

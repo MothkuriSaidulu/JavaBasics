@@ -22,7 +22,7 @@ public class practice {
 		if (number == 0 || number == 1) {
 			System.out.println(number + " is not prime number ");
 		} else if (number == 2) {
-			System.out.println(number + " is not Prime number");
+			System.out.println(number + " is a Prime number");
 		} else {
 
 			for (int i = 2; i <= number / 2; i++) {
@@ -45,6 +45,7 @@ public class practice {
 		int number = 9;
 
 		boolean flag = false;
+
 		for (int i = 2; i <= number / 2; i++) // 20 / 2 = 10 > i
 		{
 			if (number % 2 == 0) {
@@ -75,15 +76,14 @@ public class practice {
 	public static void reverseTheWords() {
 
 		String str = "I Am Writing Java Program";
-		String splittedStr[] = str.split(" ");
+		String[] splittedStr = str.split(" ");
 		String reverseWord = " ";
 
 		for (String w : splittedStr) {
-
 			StringBuilder sb = new StringBuilder(w);
-			StringBuilder str2  = sb.reverse();
+			StringBuilder str2 = sb.reverse();
 			str2.append(str);
-			reverseWord+=str2.toString()+" ";
+			reverseWord += str2.toString() + " ";
 		}
 		System.out.print(reverseWord.trim());
 
@@ -136,6 +136,5 @@ public class practice {
 		System.err.println(" Repeated time id  " + count);
 
 	}
-	
 
 }

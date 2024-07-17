@@ -4,10 +4,10 @@ public class JavaPractice {
 
 	public static void main(String[] args) {
 
-		Fibonacci_Series();
+//		Fibonacci_Series();
 		primeNumbers();
-		findDevidedNumberFromList();
-		multipleOfTable();
+//		findDevidedNumberFromList();
+//		multipleOfTable();
 
 	}
 
@@ -57,9 +57,7 @@ public class JavaPractice {
 			} else if (i % 2 != 0) {
 				System.out.println(i + " This Number will Not devided by 2");
 			}
-
 		}
-
 	}
 
 	public static void multipleOfTable() {
