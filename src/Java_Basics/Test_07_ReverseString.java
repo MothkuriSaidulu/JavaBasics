@@ -4,37 +4,39 @@ public class Test_07_ReverseString {
 
 	public static void main(String[] args) {
 
-//		String value = "12345";
-//		System.out.println(reverseString(value));
 		stringReverse();
-
+//		numberreverse();
 	}
 
-	public static StringBuilder reverseString(String value) {
-		StringBuilder stringBuilder = new StringBuilder();
+	public static void numberreverse() {
+		int number = 12345;
+		int reverseNumber = 0;
 
-		char[] chars = value.toCharArray();
+//		reminder = number % 10 => remainder
+//		reverseNumber = reverseNumber * 10 + remainder => 0 * 10 + 5 = 5
+//		number = number / 10 => number
 
-		for (int i = chars.length - 1; i >= 0; i--) {
-			stringBuilder.append(chars[i]);
-
+		while (number != 0) {
+			int rem = number % 10;
+			reverseNumber = reverseNumber * 10 + rem;
+			number = number / 10;
 		}
-		return stringBuilder;
+
+		System.out.println(reverseNumber);
 	}
 
 	public static void stringReverse() {
-		String name = "Saidachary";
 
-		StringBuilder buildString = new StringBuilder();
+		String str = "Saidachary";
+		String reverseStr = "";
 
-		char[] charArray = name.toCharArray();
-
-		for (int i = charArray.length - 1; i >= 0; i--) {
-
-//			System.out.println(charArray[i]);
-			buildString.append(charArray[i]);
-
+		for (int i = str.length() - 1; i >= 0; i--) {
+			char ch = str.charAt(i);
+			reverseStr = reverseStr + ch;
 		}
-		System.out.println("Print The String in reverse : " + buildString);
+		
+		System.out.println(str);
+		System.out.println(reverseStr);
 	}
+
 }

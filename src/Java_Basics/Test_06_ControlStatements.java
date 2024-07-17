@@ -58,10 +58,9 @@ public class Test_06_ControlStatements {
 			System.out.println("if above both conditions false then this will execute");
 
 		}
-
 	}
 
-// Switch Statment	
+// Switch Statement	
 	public static void switchSatement() {
 		int num = 2;
 		switch (num) {
@@ -76,10 +75,9 @@ public class Test_06_ControlStatements {
 		default:
 			System.out.println(num);
 		}
-
 	}
 
-	public static void continueStateMent() {
+	public static void continueStatement() {
 		for (int i = 0; i <= 2; i++) {
 
 			for (int j = i; j <= 5; j++) {
@@ -131,7 +129,6 @@ public class Test_06_ControlStatements {
 
 //	Loop Statements for loop
 	public static void forLoop(String[] args) {
-		// TODO Auto-generated method stub
 		int sum = 0;
 		for (int j = 1; j <= 10; j++) {
 			sum = sum + j;
@@ -139,12 +136,11 @@ public class Test_06_ControlStatements {
 		System.out.println("The sum of first 10 natural numbers is " + sum);
 	}
 
-//	Loop Statements Java for-each loop
 	public static void eachForLoop() {
-		// TODO Auto-generated method stub
-		String[] names = { "Java", "C", "C++", "Python", "JavaScript" };
 
-		System.out.println("Printing the content of the array names:\n");
+		String[] names = { "Java", "C", "C++", "Python", "JavaScript" };
+		System.out.println("Printing the content of the array names:");
+
 		for (String name : names) {
 			System.out.println(name);
 		}
@@ -152,11 +148,9 @@ public class Test_06_ControlStatements {
 
 // Java while loop
 	public static void whileLoop() {
-
 		int i = 0;
-
 		while (i <= 10) {
-//				System.out.println(i);
+//			System.out.println(i);
 			i = i + 2;
 			System.out.println(i);
 		}
